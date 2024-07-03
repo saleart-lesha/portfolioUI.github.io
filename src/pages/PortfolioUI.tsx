@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Header from '../widget/Header/Header.tsx'
 
 const PortfolioUI = () => {
   const ContactPage = lazy(() => import('./ContactPage/ContactPage.tsx'))
@@ -8,6 +9,7 @@ const PortfolioUI = () => {
 
   return (
     <Suspense fallback={<span>Загрузка...</span>}>
+      <Header />
       <Routes>
         <Route path='/' element={<ContactPage />} />
         <Route path='/works' element={<WorksPage />} />

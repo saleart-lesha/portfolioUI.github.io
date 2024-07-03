@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu_body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 32px 60px;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_link a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 0 0 32px;
+}
+
+.menu_link a span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.menu_link_click a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 0 0 32px;
+}
+
+.menu_link_click a span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff6464;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  top: 50%;
+  transform: rotate(45deg) translate(0, -50%);
+}
+
+@media (max-width: 730px) {
+  .burger {
+    display: flex;
+  }
+
+  .burger:active {
+    display: flex;
+    background-color: transparent;
+  }
+
+  .menu_body {
+    padding: 20px 18px 32px 0px;
+  }
+  .menu_list {
+    display: none;
+  }
+  .menu_list.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    right: 0;
+    background-color: rgb(238, 236, 236);
+    z-index: 50;
+    overflow-y: auto;
+    padding-top: 70px;
+  }
+  .menu_link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .menu_link a {
+    margin: 0;
+  }
+
+  .menu_link_click {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .menu_link_click a {
+    margin: 0;
+  }
+}
