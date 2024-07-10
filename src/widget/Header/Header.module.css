@@ -1,6 +1,5 @@
 .header {
-  display: flex;
-  justify-content: flex-end;
+  padding: 32px 60px;
 }
 
 .menu_body {
@@ -8,7 +7,6 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  padding: 32px 60px;
 }
 
 .menu_list {
@@ -20,27 +18,22 @@
   padding: 0;
 }
 
-.menu_link a {
+.menu_links {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 0 0 32px;
 }
 
-.menu_link a span {
+.menu_links_text {
   font-size: 20px;
   font-weight: 500;
   color: #000000;
 }
 
-.menu_link_click a {
-  text-decoration: none;
-  color: inherit;
-  margin: 0 0 0 32px;
-}
-
-.menu_link_click a span {
-  font-size: 20px;
-  font-weight: 500;
+.menu_links_text_active {
   color: #ff6464;
 }
 
@@ -123,25 +116,24 @@
     background-color: rgb(238, 236, 236);
     z-index: 50;
     overflow-y: auto;
-    padding-top: 70px;
+    padding-top: 100px;
   }
-  .menu_link {
+  .menu_links {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    width: 100%;
+    margin: 20px 0 0 0;
   }
-  .menu_link a {
+  .menu_links_text {
     margin: 0;
   }
 
-  .menu_link_click {
+  .menu_links_text_active {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     width: 100%;
   }
-  .menu_link_click a {
+  .menu_links_text_active {
     margin: 0;
   }
 }

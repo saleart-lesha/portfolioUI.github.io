@@ -1,41 +1,55 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import classes from './Header.module.css'
+import clsx from 'clsx'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [currentPage, setCurrentPage] = useState<'/' | 'works' | 'blog'>('/')
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  let location = useLocation()
+
   return (
     <header className={classes.header}>
       <nav className={classes.menu_body}>
         <ul className={isMenuOpen ? `${classes.menu_list} ${classes.active}` : classes.menu_list}>
-          <li
-            className={currentPage === '/' ? classes.menu_link_click : classes.menu_link}
-            onClick={() => setCurrentPage('/')}
-          >
-            <Link to='/'>
-              <span>Contact</span>
+          <li className={classes.menu_item}>
+            <Link className={classes.menu_links} to='/'>
+              <span
+                className={clsx({
+                  [classes.menu_links_text]: true,
+                  [classes.menu_links_text_active]: location.pathname === '/',
+                })}
+              >
+                Contact
+              </span>
             </Link>
           </li>
-          <li
-            className={currentPage === 'works' ? classes.menu_link_click : classes.menu_link}
-            onClick={() => setCurrentPage('works')}
-          >
-            <Link to='/works'>
-              <span>Works</span>
+          <li>
+            <Link className={classes.menu_links} to='/works'>
+              <span
+                className={clsx({
+                  [classes.menu_links_text]: true,
+                  [classes.menu_links_text_active]: location.pathname === '/works',
+                })}
+              >
+                Works
+              </span>
             </Link>
           </li>
-          <li
-            className={currentPage === 'blog' ? classes.menu_link_click : classes.menu_link}
-            onClick={() => setCurrentPage('blog')}
-          >
-            <Link to='/blog'>
-              <span>Blog</span>
+          <li>
+            <Link className={classes.menu_links} to='/blog'>
+              <span
+                className={clsx({
+                  [classes.menu_links_text]: true,
+                  [classes.menu_links_text_active]: location.pathname === '/blog',
+                })}
+              >
+                Blog
+              </span>
             </Link>
           </li>
         </ul>
