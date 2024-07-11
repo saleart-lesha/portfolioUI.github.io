@@ -1,5 +1,9 @@
 .header {
   padding: 32px 60px 32px 60px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 .menu_body {
@@ -97,8 +101,12 @@
     background-color: transparent;
   }
 
+  .header {
+    padding-bottom: 10px 10px;
+  }
+
   .menu_body {
-    padding: 20px 18px 32px 0px;
+    padding: 0px 18px 0px 0px;
   }
   .menu_list {
     display: none;
