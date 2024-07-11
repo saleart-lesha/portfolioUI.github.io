@@ -1,10 +1,12 @@
 import React from 'react'
 import Profile from '../../entities/Profile/ui/Profile'
+import RecentPosts from '../../entities/RecentPosts/ui/RecentPosts'
 
 const ContactPage = () => {
   return (
-    <div className='content'>
+    <div>
       <Profile />
+      <RecentPosts />
     </div>
   )
 }
