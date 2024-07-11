@@ -1,0 +1,76 @@
+.main_body {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 60px 0 60px;
+}
+
+.header_description {
+  margin: 0 0 40px 0;
+  width: 506px;
+}
+
+.header_description_text {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.content_description {
+  margin: 0 100px 25px 0;
+  width: 506px;
+}
+
+.content_description_text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.download_resume_btn {
+  background-color: #ff6464;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+
+.download_resume_btn_text {
+  font-family: 'Heebo', sans-serif;
+  src: url('./../../../app/fonts/Heebo-Medium.ttf') format('truetype');
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .main_body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header_description {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content_description {
+    width: 100%;
+    margin: 20px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 730px) {
+  .main_body {
+    margin-top: 0px;
+  }
+}
