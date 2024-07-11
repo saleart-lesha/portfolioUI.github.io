@@ -1,7 +1,7 @@
 .main_body {
   display: flex;
-  justify-content: space-between;
-  margin: 150px 60px 0 60px;
+  justify-content: center;
+  padding: 150px 60px 70px 60px;
 }
 
 .header_description {
@@ -40,7 +40,7 @@
   color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 970px) {
   .main_body {
     display: flex;
     flex-direction: column-reverse;
@@ -71,6 +71,7 @@
 
 @media (max-width: 730px) {
   .main_body {
-    margin-top: 0px;
+    padding: 0px 60px 70px 60px;
+    margin: 0;
   }
 }
