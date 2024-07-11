@@ -12,7 +12,6 @@
 .header_description_text {
   font-size: 44px;
   font-weight: 700;
-  margin-bottom: 50px;
 }
 
 .content_description {
@@ -73,5 +72,8 @@
   .main_body {
     padding: 0px 60px 70px 60px;
     margin: 0;
+  }
+  .header_description_text {
+    font-size: 36px;
   }
 }
