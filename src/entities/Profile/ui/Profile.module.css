@@ -39,7 +39,7 @@
   color: white;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1024px) {
   .main_body {
     display: flex;
     flex-direction: column-reverse;
