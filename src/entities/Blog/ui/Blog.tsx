@@ -22,54 +22,48 @@ const Blog = () => {
             </div>
             <hr className={classes.under_line} />
           </div>
-          <div className={classes.box_items}>
-            <div className={classes.item}>
-              <h2 className={classes.item_header}>UI Interactions of the week</h2>
-              <div className={classes.item_header_description}>
-                <p className={classes.item_header_description_date}>12 Feb 2019</p>
-                <p className={classes.item_header_description_separator}>|</p>
-                <p className={classes.item_header_description_name}>Express, Handlebars</p>
-              </div>
-              <p className={classes.item_description_main_text}>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.
-              </p>
+          <div className={classes.item}>
+            <h2 className={classes.item_header}>UI Interactions of the week</h2>
+            <div className={classes.item_header_description}>
+              <p className={classes.item_header_description_date}>12 Feb 2019</p>
+              <p className={classes.item_header_description_separator}>|</p>
+              <p className={classes.item_header_description_name}>Express, Handlebars</p>
             </div>
-            <hr className={classes.under_line} />
+            <p className={classes.item_description_main_text}>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.
+            </p>
           </div>
-          <div className={classes.box_items}>
-            <div className={classes.item}>
-              <h2 className={classes.item_header}>UI Interactions of the week</h2>
-              <div className={classes.item_header_description}>
-                <p className={classes.item_header_description_date}>12 Feb 2019</p>
-                <p className={classes.item_header_description_separator}>|</p>
-                <p className={classes.item_header_description_name}>Express, Handlebars</p>
-              </div>
-              <p className={classes.item_description_main_text}>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.
-              </p>
+          <hr className={classes.under_line} />
+          <div className={classes.item}>
+            <h2 className={classes.item_header}>UI Interactions of the week</h2>
+            <div className={classes.item_header_description}>
+              <p className={classes.item_header_description_date}>12 Feb 2019</p>
+              <p className={classes.item_header_description_separator}>|</p>
+              <p className={classes.item_header_description_name}>Express, Handlebars</p>
             </div>
-            <hr className={classes.under_line} />
+            <p className={classes.item_description_main_text}>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.
+            </p>
           </div>
-          <div className={classes.box_items}>
-            <div className={classes.item}>
-              <h2 className={classes.item_header}>UI Interactions of the week</h2>
-              <div className={classes.item_header_description}>
-                <p className={classes.item_header_description_date}>12 Feb 2019</p>
-                <p className={classes.item_header_description_separator}>|</p>
-                <p className={classes.item_header_description_name}>Express, Handlebars</p>
-              </div>
-              <p className={classes.item_description_main_text}>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.
-              </p>
+          <hr className={classes.under_line} />
+          <div className={classes.item}>
+            <h2 className={classes.item_header}>UI Interactions of the week</h2>
+            <div className={classes.item_header_description}>
+              <p className={classes.item_header_description_date}>12 Feb 2019</p>
+              <p className={classes.item_header_description_separator}>|</p>
+              <p className={classes.item_header_description_name}>Express, Handlebars</p>
             </div>
-            <hr className={classes.under_line} />
+            <p className={classes.item_description_main_text}>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.
+            </p>
           </div>
+          <hr className={classes.under_line} />
         </div>
       </div>
     </section>
