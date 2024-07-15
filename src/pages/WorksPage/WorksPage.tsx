@@ -1,7 +1,7 @@
-import React from 'react'
+import Works from '../../entities/Works/ui/Works'
 
 const WorksPage = () => {
-  return <div>works</div>
+  return <Works />
 }
 
 export default WorksPage
