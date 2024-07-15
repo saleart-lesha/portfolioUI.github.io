@@ -7,7 +7,9 @@ import PortfolioUI from './pages/PortfolioUI'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <PortfolioUI />
+      <main>
+        <PortfolioUI />
+      </main>
     </BrowserRouter>
   </React.StrictMode>,
 )
