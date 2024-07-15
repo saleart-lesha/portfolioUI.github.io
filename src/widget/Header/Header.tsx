@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import classes from './Header.module.css'
 import clsx from 'clsx'
 
@@ -11,6 +11,10 @@ const Header = () => {
   }
 
   let location = useLocation()
+
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [location])
 
   return (
     <header className={classes.header}>
