@@ -2,6 +2,7 @@ import classes from './FeaturedWorks.module.css'
 import imgDesigning from './../../../app/img/featuredWorks/Rectangle 30.svg'
 import imgVibrant from './../../../app/img/featuredWorks/Rectangle 32.svg'
 import img36Days from './../../../app/img/featuredWorks/Rectangle 34.svg'
+import { Link } from 'react-router-dom'
 
 const FeaturedWorks = () => {
   return (
@@ -11,7 +12,11 @@ const FeaturedWorks = () => {
         <div className={classes.box_item}>
           <img className={classes.img} src={imgDesigning} alt='' />
           <div className={classes.text_content}>
-            <p className={classes.text_content_header}>Designing Dashboards</p>
+            <p className={classes.content_header}>
+              <Link className={classes.content_header_text} to='/works/1'>
+                Designing Dashboards
+              </Link>
+            </p>
             <div className={classes.text_content_description}>
               <p className={classes.text_content_description_date}>2020</p>
               <p className={classes.text_content_description_name}>Dashboard</p>
@@ -27,7 +32,11 @@ const FeaturedWorks = () => {
         <div className={classes.box_item}>
           <img className={classes.img} src={imgVibrant} alt='' />
           <div className={classes.text_content}>
-            <p className={classes.text_content_header}>Vibrant Portraits of 2020</p>
+            <p className={classes.content_header}>
+              <Link className={classes.content_header_text} to='/works/1'>
+                Vibrant Portraits of 2020
+              </Link>
+            </p>
             <div className={classes.text_content_description}>
               <p className={classes.text_content_description_date}>2018</p>
               <p className={classes.text_content_description_name}>Illustration</p>
@@ -43,7 +52,11 @@ const FeaturedWorks = () => {
         <div className={classes.box_item}>
           <img className={classes.img} src={img36Days} alt='' />
           <div className={classes.text_content}>
-            <p className={classes.text_content_header}>36 Days of Malayalam type</p>
+            <p className={classes.content_header}>
+              <Link className={classes.content_header_text} to='/works/1'>
+                36 Days of Malayalam type
+              </Link>
+            </p>
             <div className={classes.text_content_description}>
               <p className={classes.text_content_description_date}>2018</p>
               <p className={classes.text_content_description_name}>Typography</p>

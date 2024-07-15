@@ -16,7 +16,7 @@ const Works = () => {
               <img className={classes.img} src={imgDesigning} />
               <div className={classes.item_content}>
                 <p className={classes.item_content_header}>
-                  <Link className={classes.item_content_header_text} to='/'>
+                  <Link className={classes.item_content_header_text} to='/works/1'>
                     Designing Dashboards
                   </Link>
                 </p>
@@ -36,7 +36,7 @@ const Works = () => {
               <img className={classes.img} src={imgVibrant} />
               <div className={classes.item_content}>
                 <p className={classes.item_content_header}>
-                  <Link className={classes.item_content_header_text} to='/'>
+                  <Link className={classes.item_content_header_text} to='/works/1'>
                     Vibrant Portraits of 2020
                   </Link>
                 </p>
@@ -56,7 +56,7 @@ const Works = () => {
               <img className={classes.img} src={img36Days} />
               <div className={classes.item_content}>
                 <p className={classes.item_content_header}>
-                  <Link className={classes.item_content_header_text} to='/'>
+                  <Link className={classes.item_content_header_text} to='/works/1'>
                     36 Days of Malayalam type
                   </Link>
                 </p>
@@ -76,7 +76,7 @@ const Works = () => {
               <img className={classes.img} src={imgComponents} />
               <div className={classes.item_content}>
                 <p className={classes.item_content_header}>
-                  <Link className={classes.item_content_header_text} to='/'>
+                  <Link className={classes.item_content_header_text} to='/works/1'>
                     Components
                   </Link>
                 </p>

@@ -111,9 +111,12 @@
   }
 
   .item_content_header {
-    font-size: 24px;
     margin-bottom: 10px;
   }
+  .item_content_header_text {
+    font-size: 24px;
+  }
+
   .item_content_description {
     margin-bottom: 10px;
   }

@@ -37,7 +37,8 @@ const Header = () => {
               <span
                 className={clsx({
                   [classes.menu_links_text]: true,
-                  [classes.menu_links_text_active]: location.pathname === '/works',
+                  [classes.menu_links_text_active]:
+                    location.pathname === '/works' || location.pathname === '/works/1',
                 })}
               >
                 Works

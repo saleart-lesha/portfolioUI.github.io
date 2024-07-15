@@ -21,10 +21,19 @@
   margin-left: 15px;
 }
 
-.text_content_header {
+.content_header {
+  margin: 0 0 24px 0;
+}
+.content_header_text {
   font-size: 30px;
   font-weight: 700;
-  margin: 0 0 24px 0;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.content_header_text:hover {
+  color: #ff6464;
 }
 
 .text_content_description {
@@ -87,9 +96,11 @@
     margin-bottom: 20px;
   }
 
-  .text_content_header {
-    font-size: 24px;
+  .content_header {
     margin-bottom: 10px;
+  }
+  .content_header_text {
+    font-size: 24px;
   }
 
   .text_content_description {
