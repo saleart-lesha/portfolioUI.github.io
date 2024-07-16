@@ -5,11 +5,11 @@ import FeaturedWorks from '../../entities/FeaturedWorks/ui/FeaturedWorks'
 
 const ContactPage = () => {
   return (
-    <div>
+    <main>
       <Profile />
       <RecentPosts />
       <FeaturedWorks />
-    </div>
+    </main>
   )
 }
 

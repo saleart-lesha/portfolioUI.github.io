@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom'
 const FeaturedWorks = () => {
   return (
     <section className={classes.main_body}>
-      <p className={classes.header}>Featured works</p>
+      <h1 className={classes.header}>Featured works</h1>
       <div className={classes.box}>
-        <div className={classes.box_item}>
+        <article className={classes.box_item}>
           <img className={classes.img} src={imgDesigning} alt='' />
           <div className={classes.text_content}>
-            <p className={classes.content_header}>
+            <h2 className={classes.content_header}>
               <Link className={classes.content_header_text} to='/works/1'>
                 Designing Dashboards
               </Link>
-            </p>
+            </h2>
             <div className={classes.text_content_description}>
               <p className={classes.text_content_description_date}>2020</p>
               <p className={classes.text_content_description_name}>Dashboard</p>
@@ -27,16 +27,16 @@ const FeaturedWorks = () => {
               amet.
             </p>
           </div>
-        </div>
+        </article>
         <hr className={classes.under_line} />
-        <div className={classes.box_item}>
+        <article className={classes.box_item}>
           <img className={classes.img} src={imgVibrant} alt='' />
           <div className={classes.text_content}>
-            <p className={classes.content_header}>
+            <h2 className={classes.content_header}>
               <Link className={classes.content_header_text} to='/works/1'>
                 Vibrant Portraits of 2020
               </Link>
-            </p>
+            </h2>
             <div className={classes.text_content_description}>
               <p className={classes.text_content_description_date}>2018</p>
               <p className={classes.text_content_description_name}>Illustration</p>
@@ -47,16 +47,16 @@ const FeaturedWorks = () => {
               amet.
             </p>
           </div>
-        </div>
+        </article>
         <hr className={classes.under_line} />
-        <div className={classes.box_item}>
+        <article className={classes.box_item}>
           <img className={classes.img} src={img36Days} alt='' />
           <div className={classes.text_content}>
-            <p className={classes.content_header}>
+            <h2 className={classes.content_header}>
               <Link className={classes.content_header_text} to='/works/1'>
                 36 Days of Malayalam type
               </Link>
-            </p>
+            </h2>
             <div className={classes.text_content_description}>
               <p className={classes.text_content_description_date}>2018</p>
               <p className={classes.text_content_description_name}>Typography</p>
@@ -67,7 +67,7 @@ const FeaturedWorks = () => {
               amet.
             </p>
           </div>
-        </div>
+        </article>
         <hr className={classes.under_line} />
       </div>
     </section>
