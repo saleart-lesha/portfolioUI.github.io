@@ -1,7 +1,11 @@
 import Works from '../../entities/Works/ui/Works'
 
 const WorksPage = () => {
-  return <Works />
+  return (
+    <main>
+      <Works />
+    </main>
+  )
 }
 
 export default WorksPage
