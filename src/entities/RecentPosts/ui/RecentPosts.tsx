@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import classes from './RecentPosts.module.css'
 
 const RecentPosts = () => {
@@ -6,9 +7,9 @@ const RecentPosts = () => {
       <header className={classes.header}>
         <h1 className={classes.header_text}>Recent posts</h1>
         <nav>
-          <a href='#' className={classes.link}>
+          <Link className={classes.link} to='/blog'>
             View all
-          </a>
+          </Link>
         </nav>
       </header>
       <div className={classes.card_box}>

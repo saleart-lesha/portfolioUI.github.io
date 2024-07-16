@@ -20,6 +20,12 @@
   font-size: 16px;
   font-weight: 400;
   color: #00a8cc;
+  transition: color 0.3s ease;
+}
+
+.link:hover,
+.link:active {
+  color: #ff6464;
 }
 
 .card_box {
