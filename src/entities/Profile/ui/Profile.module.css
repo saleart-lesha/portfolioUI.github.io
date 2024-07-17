@@ -12,6 +12,7 @@
 .header_description_text {
   font-size: 44px;
   font-weight: 700;
+  margin: 0;
 }
 
 .content_description {

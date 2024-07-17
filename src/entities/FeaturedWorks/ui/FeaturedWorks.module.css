@@ -3,9 +3,13 @@
 }
 
 .header {
+  margin: 0 0 32px 0;
+}
+
+.header_text {
   font-size: 22px;
   font-weight: 400;
-  margin: 0 0 32px 0;
+  margin: 0;
 }
 
 .box {
@@ -83,9 +87,12 @@
   .header {
     display: flex;
     justify-content: center;
-    font-size: 18px;
     margin: 0;
     padding-bottom: 15px;
+  }
+
+  .header_text {
+    font-size: 18px;
   }
 
   .box_item {
